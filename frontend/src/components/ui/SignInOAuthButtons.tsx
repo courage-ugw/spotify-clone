@@ -1,6 +1,6 @@
 import { useSignIn } from "@clerk/clerk-react"
 import { Button } from "../ui/button"
-
+import { GoogleLogoIcon } from "@radix-ui/react-icons"
 const SignInOAuthButtons = () => {
     const { signIn, isLoaded } = useSignIn()
 
@@ -16,6 +16,7 @@ const SignInOAuthButtons = () => {
 
   return (
     <Button variant={"secondary"} className="w-full text-white border-zinc-200 h-11" onClick={signInWithGoogle}>
+      <img src="/google.png" alt="Google" className="size-5" />
         Sing in
     </Button>
   )
