@@ -1,6 +1,5 @@
 import { useSignIn } from "@clerk/clerk-react"
 import { Button } from "../ui/button"
-import { GoogleLogoIcon } from "@radix-ui/react-icons"
 const SignInOAuthButtons = () => {
     const { signIn, isLoaded } = useSignIn()
 
